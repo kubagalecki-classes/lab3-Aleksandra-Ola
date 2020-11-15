@@ -6,30 +6,25 @@ using namespace std;
 unsigned int transportujFlota(unsigned int towar)
 {
     // Twoja implementacja tutaj
+int i=0;
  if (towar ==0)
  {
    cout<<"nie tworzymy zadnego statku"<<endl;
  }
  else
- {    
-   int i=0;
-   int suma = 0;
-   int towarstatku;
+ {     
+   int suma = 0; 
    int liczbazaglowcow;
    while (suma < towar)
    {
     Stocznia stocznia{};
     Statek* s1=stocznia();
-    towarstatku = unsigned int transportuj();
+    unsigned int transportuj(unsigned int towarstatku);
     suma=suma+towarstatku;
     if(dynamic_cast<Zaglowiec*>(s1))
-    {i=i+1;};
-    
+    {i=i+1;};   
     delete s1;
-
    }
- 
  }
- 
     return i;
 }
