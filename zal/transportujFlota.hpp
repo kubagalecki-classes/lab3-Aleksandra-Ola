@@ -7,14 +7,15 @@ unsigned int transportujFlota(unsigned int towar)
 {
     // Twoja implementacja tutaj
 int i=0;
+unsigned int towarstatku=0;
+int suma = 0; 
+int liczbazaglowcow;
  if (towar ==0)
  {
    cout<<"nie tworzymy zadnego statku"<<endl;
  }
  else
  {     
-   int suma = 0; 
-   int liczbazaglowcow;
    while (suma < towar)
    {
     Stocznia stocznia{};
