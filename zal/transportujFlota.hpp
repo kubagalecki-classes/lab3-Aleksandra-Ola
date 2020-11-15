@@ -20,9 +20,9 @@ int liczbazaglowcow;
    {
     Stocznia stocznia{};
     Statek* s1=stocznia();
-    unsigned int transportuj(unsigned int towarstatku);
+    towarstatku = unsigned int transportuj();
     suma=suma+towarstatku;
-    if(dynamic_cast<Zaglowiec*>(s1))
+    if(dynamic_cast< Zaglowiec* >(s1))
     {i=i+1;};   
     delete s1;
    }
