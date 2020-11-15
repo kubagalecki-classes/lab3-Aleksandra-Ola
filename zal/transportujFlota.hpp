@@ -13,6 +13,7 @@ int liczbazaglowcow;
  if (towar ==0)
  {
    cout<<"nie tworzymy zadnego statku"<<endl;
+   return 0;
  }
  else
  {     
@@ -20,12 +21,13 @@ int liczbazaglowcow;
    {
     Stocznia stocznia{};
     Statek* s1=stocznia();
-    towarstatku = unsigned int transportuj();
+    towarstatku = s1->transportuj();
     suma=suma+towarstatku;
     if(dynamic_cast< Zaglowiec* >(s1))
     {i=i+1;};   
     delete s1;
    }
- }
     return i;
+ }
+
 }
